@@ -68,6 +68,7 @@
                 <a href="#" class="sidebar-link flex items-center py-3 px-6 font-medium text-slate-700" data-target="actividades"><span class="mr-3 text-xl">✍️</span> Actividades</a>
                 <a href="#" class="sidebar-link flex items-center py-3 px-6 font-medium text-slate-700" data-target="evaluacion"><span class="mr-3 text-xl">✔️</span> Evaluación</a>
                 <a href="#" class="sidebar-link flex items-center py-3 px-6 font-medium text-slate-700" data-target="recursos"><span class="mr-3 text-xl">📖</span> Recursos</a>
+                <a href="#" class="sidebar-link flex items-center py-3 px-6 font-medium text-slate-700" data-target="bibliografia"><span class="mr-3 text-xl">📚</span> Bibliografía</a>
             </nav>
         </aside>
 
@@ -85,6 +86,7 @@
                     <option value="actividades">✍️ Actividades Prácticas</option>
                     <option value="evaluacion">✔️ Evaluación</option>
                     <option value="recursos">📖 Recursos</option>
+                    <option value="bibliografia">📚 Bibliografía</option>
                 </select>
             </div>
 
@@ -167,9 +169,9 @@
                             <div class="mt-8 mb-6 p-4 bg-white border border-green-300 rounded-lg shadow-sm flex flex-col items-center relative">
                                 <h3 class="text-xl font-bold text-green-700 mb-4">Mejora de la calidad del texto</h3>
                                 <br>
-                                <div class="w-full h-32 sm:h-48 md:h-64 xl:h-80 bg-white rounded flex items-center justify-center relative">
+                                <div class="w-full h-32 sm:h-48 md:h-64 xl:h-80 bg-white rounded flex items-center justify-center relative overflow-hidden">
                                     <!-- Puedes cambiar la ruta de la imagen según corresponda -->
-                                    <img src="img/1.png" alt="Mejora de la calidad del texto" class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain rounded-xl shadow-md border-2 border-green-200 bg-white transition-transform duration-300 ease-in-out hover:scale-150 hover:shadow-xl hover:z-[9999] cursor-pointer relative" loading="lazy" />
+                                    <img src="img/1.png" alt="Mejora de la calidad del texto" class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain rounded-xl shadow-md border-2 border-green-200 bg-white transition-transform duration-300 ease-in-out hover:scale-110 sm:hover:scale-125 md:hover:scale-150 hover:shadow-xl hover:z-[9999] cursor-pointer relative" loading="lazy" />
                                 </div>
                                 
                                 <br>
@@ -682,6 +684,27 @@
                 
                 </ul>
             </div>
+
+            <!-- Bibliografía -->
+            <div id="bibliografia" class="content-pane">
+                <h2 class="text-2xl sm:text-3xl font-bold text-green-800 mb-6">Bibliografía</h2>
+                <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500">
+                    <span class="block text-slate-700">
+                        Gómez, R. (2015) <i>Manual de redacción y corrección de estilo.</i> Editorial UOC. <br>
+                    </span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500">
+                    <span class="block text-slate-700">
+                        Ministerio de Educación Nacional de Colombia. (2019). <i>Orientaciones pedagógicas para el fortalecimiento de las competencias comunicativas.</i> MEN. <br>
+                    </span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500">
+                    <span class="block text-slate-700">
+                        Zayas, F. (2010). <i>Cómo escribir bien en secundaria.</i> Graó.<br>
+                    </span>
+                </div>
+            </div>
             
             <!-- Footer/Credits -->
             <footer class="mt-12 pt-6 border-t-2 border-slate-200 text-center">
@@ -941,9 +964,18 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isOpen) {
                 panel.classList.remove('hidden');
                 panel.classList.add('block');
+                // Scroll suave hacia el botón del acordeón para mostrar título y contenido
+                setTimeout(() => {
+                    this.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start',
+                        inline: 'nearest'
+                    });
+                }, 100);
             }
         });
     });
+
 </script>
 
 <!-- Modal flotante para Ortográficos -->
