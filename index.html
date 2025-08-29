@@ -147,15 +147,7 @@
                     </li>
                     <li class="flex items-start p-4 bg-white rounded-lg shadow-sm">
                         <span class="text-green-700 mr-3 text-2xl">🎯</span>
-                        <span>Fortalecer las competencias de revisión y edición de textos mediante la aplicación de estrategias estructuradas en diferentes etapas.</span>
-                    </li>
-                    <li class="flex items-start p-4 bg-white rounded-lg shadow-sm">
-                        <span class="text-green-700 mr-3 text-2xl">🎯</span>
                         <span>Reconocer y clasificar los diferentes tipos de errores presentes en un texto (ortográficos, gramaticales, de puntuación y de estilo).</span>
-                    </li>
-                    <li class="flex items-start p-4 bg-white rounded-lg shadow-sm">
-                        <span class="text-green-700 mr-3 text-2xl">🎯</span>
-                        <span>Aplicar técnicas de revisión global para evaluar coherencia, propósito y unidad temática de un texto.</span>
                     </li>
                     <li class="flex items-start p-4 bg-white rounded-lg shadow-sm">
                         <span class="text-green-700 mr-3 text-2xl">🎯</span>
@@ -165,24 +157,15 @@
                         <span class="text-green-700 mr-3 text-2xl">🎯</span>
                         <span>Mejorar la claridad, precisión y fluidez del texto mediante la corrección de estilo.</span>
                     </li>
-                    <li class="flex items-start p-4 bg-white rounded-lg shadow-sm">
-                        <span class="text-green-700 mr-3 text-2xl">🎯</span>
-                        <span>Utilizar herramientas y recursos digitales para la detección y corrección de errores.</span>
-                    </li>
                 </ul>
             </div>
             <!-- Fin Objetivos -->
 
             <!-- Fundamentos Teóricos -->
             <div id="contenido" class="content-pane">
-                <!-- Acordeón de temas -->
+                <h2 class="text-2xl sm:text-3xl font-bold text-green-800 mb-6">Identificación y corrección de textos</h2>
                 <div class="w-full max-w-8xl mx-auto">
-                    <div class="mb-4">
-                        <button type="button" class="w-full flex justify-between items-center p-4 bg-green-100 border border-green-300 rounded-t-lg focus:outline-none font-bold text-green-800 text-lg accordion-btn mb-2" data-target="#panel-ecuaciones">
-                            Identificación y corrección de textos<span class="ml-2">➕</span>
-                        </button>
-                    </div>
-                    <div id="panel-ecuaciones" class="accordion-panel hidden bg-white border border-t-0 border-green-300 rounded-b-lg p-4 mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
                         <div class="space-y-8 text-slate-700 leading-relaxed">
                             <div>
                                 <p class="mb-4">
@@ -363,77 +346,53 @@
                                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                                             <!-- Ortográficos -->
                                             <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-lg p-3 shadow type-card cursor-pointer hover:bg-yellow-100 transition-colors duration-200" onclick="showOrtograficosModal()">
-                                                <div class="flex justify-between items-start">
-                                                    <div class="flex-1">
-                                                        <h5 class="font-bold text-yellow-700 mb-1 flex items-center gap-2">
-                                                            <span class="text-lg">🔤</span> Ortográficos
-                                                        </h5>
-                                                        <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
-                                                            <li>Acentos</li>
-                                                            <li>Mayúsculas</li>
-                                                            <li>Confusiones b/v, c/s/z</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="ml-2 opacity-70 hover:opacity-100 transition-opacity duration-200">
-                                                        <!-- Aquí puedes agregar tu imagen de clic -->
-                                                        <img src="img/clic.png" alt="Hacer clic" class="w-6 h-6 object-contain">
-                                                    </div>
+                                                <div>
+                                                    <h5 class="font-bold text-yellow-700 mb-1 flex items-center gap-2">
+                                                        <span class="text-lg">🔤</span> Ortográficos
+                                                    </h5>
+                                                    <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
+                                                        <li>Acentos</li>
+                                                        <li>Mayúsculas</li>
+                                                        <li>Confusiones b/v, c/s/z</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                             <!-- Gramaticales -->
                                             <div class="bg-blue-50 border-l-4 border-blue-400 rounded-lg p-3 shadow type-card cursor-pointer hover:bg-blue-100 transition-colors duration-200" onclick="showGramaticalesModal()">
-                                                <div class="flex justify-between items-start">
-                                                    <div class="flex-1">
-                                                        <h5 class="font-bold text-blue-700 mb-1 flex items-center gap-2">
-                                                            <span class="text-lg">📚</span> Gramaticales
-                                                        </h5>
-                                                        <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
-                                                            <li>Uso de tiempos verbales</li>
-                                                            <li>Concordancia</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="ml-2 opacity-70 hover:opacity-100 transition-opacity duration-200">
-                                                        <!-- Aquí puedes agregar tu imagen de clic -->
-                                                        <img src="img/clic.png" alt="Hacer clic" class="w-6 h-6 object-contain">
-                                                    </div>
+                                                <div>
+                                                    <h5 class="font-bold text-blue-700 mb-1 flex items-center gap-2">
+                                                        <span class="text-lg">📚</span> Gramaticales
+                                                    </h5>
+                                                    <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
+                                                        <li>Uso de tiempos verbales</li>
+                                                        <li>Concordancia</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                             <!-- De puntuación -->
                                             <div class="bg-pink-50 border-l-4 border-pink-400 rounded-lg p-3 shadow type-card cursor-pointer hover:bg-pink-100 transition-colors duration-200" onclick="showPuntuacionModal()">
-                                                <div class="flex justify-between items-start">
-                                                    <div class="flex-1">
-                                                        <h5 class="font-bold text-pink-700 mb-1 flex items-center gap-2">
-                                                            <span class="text-lg">✍️</span> De puntuación
-                                                        </h5>
-                                                        <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
-                                                            <li>Comas</li>
-                                                            <li>Puntos</li>
-                                                            <li>Signos de interrogación</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="ml-2 opacity-70 hover:opacity-100 transition-opacity duration-200">
-                                                        <!-- Aquí puedes agregar tu imagen de clic -->
-                                                        <img src="img/clic.png" alt="Hacer clic" class="w-6 h-6 object-contain">
-                                                    </div>
+                                                <div>
+                                                    <h5 class="font-bold text-pink-700 mb-1 flex items-center gap-2">
+                                                        <span class="text-lg">✍️</span> De puntuación
+                                                    </h5>
+                                                    <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
+                                                        <li>Comas</li>
+                                                        <li>Puntos</li>
+                                                        <li>Signos de interrogación</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                             <!-- De estilo -->
                                             <div class="bg-purple-50 border-l-4 border-purple-400 rounded-lg p-3 shadow type-card cursor-pointer hover:bg-purple-100 transition-colors duration-200" onclick="showEstiloModal()">
-                                                <div class="flex justify-between items-start">
-                                                    <div class="flex-1">
-                                                        <h5 class="font-bold text-purple-700 mb-1 flex items-center gap-2">
-                                                            <span class="text-lg">🎨</span> De estilo
-                                                        </h5>
-                                                        <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
-                                                            <li>Repeticiones</li>
-                                                            <li>Frases largas</li>
-                                                            <li>Lenguaje poco claro</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="ml-2 opacity-70 hover:opacity-100 transition-opacity duration-200">
-                                                        <!-- Aquí puedes agregar tu imagen de clic -->
-                                                        <img src="img/clic.png" alt="Hacer clic" class="w-6 h-6 object-contain">
-                                                    </div>
+                                                <div>
+                                                    <h5 class="font-bold text-purple-700 mb-1 flex items-center gap-2">
+                                                        <span class="text-lg">🎨</span> De estilo
+                                                    </h5>
+                                                    <ul class="list-disc list-inside text-slate-700 text-xs pl-2">
+                                                        <li>Repeticiones</li>
+                                                        <li>Frases largas</li>
+                                                        <li>Lenguaje poco claro</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -667,6 +626,61 @@
                 </div>
                 <button id="check-activity-btn" class="mt-6 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Verificar Respuestas</button>
                 <div id="activity-result" class="mt-4 font-medium"></div>
+
+                <!-- Juego de Identificación de Errores -->
+                <div class="bg-white border-l-4 border-green-500 rounded-lg shadow-sm p-6 mt-8">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4 text-center">🎮 : Identifica los errores</h3>
+                    <p class="text-gray-700 mb-6 text-center">Encuentra y clasifica los errores en las siguientes oraciones. Haz clic en las palabras incorrectas.</p>
+                    
+                    <!-- Controles del juego -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-6">
+                        <div class="bg-white rounded-lg p-3 shadow-sm">
+                            <span class="text-sm font-medium text-gray-600">Puntuación: </span>
+                            <span id="game-score" class="text-lg font-bold text-green-600">0</span>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 shadow-sm">
+                            <span class="text-sm font-medium text-gray-600">Errores encontrados: </span>
+                            <span id="errors-found" class="text-lg font-bold text-blue-600">0</span>
+                            <span class="text-sm text-gray-500">/ <span id="total-errors">0</span></span>
+                        </div>
+                    </div>
+
+                    <!-- Leyenda de tipos de errores -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                        <div class="bg-red-100 border border-red-300 rounded-lg p-2 text-center">
+                            <span class="text-red-700 font-medium">🔤 Ortográficos</span>
+                        </div>
+                        <div class="bg-blue-100 border border-blue-300 rounded-lg p-2 text-center">
+                            <span class="text-blue-700 font-medium">📚 Gramaticales</span>
+                        </div>
+                        <div class="bg-purple-100 border border-purple-300 rounded-lg p-2 text-center">
+                            <span class="text-purple-700 font-medium">✍️ Puntuación</span>
+                        </div>
+                    </div>
+
+                    <!-- Oraciones del juego -->
+                    <div id="game-sentences" class="space-y-4">
+                        <!-- Las oraciones se generarán dinámicamente -->
+                    </div>
+
+                    <!-- Botones de control -->
+                    <div class="flex flex-wrap justify-center gap-4 mt-6">
+                        <button id="start-game-btn" class="bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                            🎮 Iniciar Juego
+                        </button>
+                        <button id="next-sentence-btn" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors hidden">
+                            ➡️ Siguiente
+                        </button>
+                        <button id="reset-game-btn" class="bg-gray-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">
+                            🔄 Reiniciar
+                        </button>
+                    </div>
+
+                    <!-- Resultado del juego -->
+                    <div id="game-feedback" class="mt-4 text-center hidden">
+                        <!-- Feedback dinámico -->
+                    </div>
+                </div>
             </div>
 
             <!-- Evaluación -->
@@ -1003,6 +1017,254 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Juego de Identificación de Errores
+    const gameData = [
+        {
+            text: "El niño juegan en el parque con su hermana",
+            errors: [
+                { word: "juegan", type: "gramatical", correct: "juega", explanation: "Concordancia: 'El niño' es singular, pero 'juegan' es plural, debería ser 'juega'" }
+            ]
+        },
+        {
+            text: "Maria fue al supermercado, compro leche y regreso a casa",
+            errors: [
+                { word: "Maria", type: "ortografico", correct: "María", explanation: "Falta tilde en nombre propio" },
+                { word: "compro", type: "ortografico", correct: "compró", explanation: "Falta tilde en verbo en pasado" },
+                { word: "regreso", type: "ortografico", correct: "regresó", explanation: "Falta tilde en verbo en pasado" }
+            ]
+        },
+        {
+            text: "Los estudiantes estudian mucho para el examen pero no tienen tiempo",
+            errors: [
+                { word: "examen", type: "puntuacion", correct: "examen,", explanation: "Falta coma antes de 'pero'" }
+            ]
+        },
+        {
+            text: "Ayer fuimos al cine y vimos una pelicula muy buena",
+            errors: [
+                { word: "pelicula", type: "ortografico", correct: "película", explanation: "Falta tilde en palabra esdrújula" }
+            ]
+        },
+        {
+            text: "El profesor explico la leccion a los alumnos rapidamente",
+            errors: [
+                { word: "explico", type: "ortografico", correct: "explicó", explanation: "Falta tilde en verbo en pasado" },
+                { word: "leccion", type: "ortografico", correct: "lección", explanation: "Falta tilde en palabra aguda terminada en 'n'" },
+                { word: "rapidamente", type: "ortografico", correct: "rápidamente", explanation: "Falta tilde en adverbio terminado en -mente" }
+            ]
+        }
+    ];
+
+    let currentSentenceIndex = 0;
+    let gameScore = 0;
+    let errorsFound = 0;
+    let gameActive = false;
+
+    function initializeGame() {
+        const startBtn = document.getElementById('start-game-btn');
+        const nextBtn = document.getElementById('next-sentence-btn');
+        const resetBtn = document.getElementById('reset-game-btn');
+
+        if (startBtn) {
+            startBtn.addEventListener('click', startGame);
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', nextSentence);
+        }
+        if (resetBtn) {
+            resetBtn.addEventListener('click', resetGame);
+        }
+    }
+
+    function startGame() {
+        gameActive = true;
+        currentSentenceIndex = 0;
+        gameScore = 0;
+        errorsFound = 0;
+        updateGameStats();
+        showCurrentSentence();
+        
+        document.getElementById('start-game-btn').style.display = 'none';
+        document.getElementById('game-feedback').classList.add('hidden');
+    }
+
+    function showCurrentSentence() {
+        if (currentSentenceIndex >= gameData.length) {
+            endGame();
+            return;
+        }
+
+        const sentence = gameData[currentSentenceIndex];
+        const container = document.getElementById('game-sentences');
+        
+        // Actualizar contador de errores totales
+        document.getElementById('total-errors').textContent = sentence.errors.length;
+        errorsFound = 0;
+        updateGameStats();
+
+        // Crear elementos clicables para cada palabra
+        const words = sentence.text.split(' ');
+        let sentenceHTML = '<div class="bg-white rounded-lg p-4 shadow-sm border-2 border-gray-200">';
+        sentenceHTML += '<p class="text-lg leading-relaxed">';
+        
+        words.forEach((word, index) => {
+            const hasError = sentence.errors.some(error => word.includes(error.word));
+            const wordClass = hasError ? 'error-word cursor-pointer hover:bg-yellow-100 px-1 rounded transition-colors' : 'cursor-pointer hover:bg-gray-100 px-1 rounded transition-colors';
+            sentenceHTML += `<span class="${wordClass}" data-word="${word}" data-index="${index}">${word}</span> `;
+        });
+        
+        sentenceHTML += '</p></div>';
+        container.innerHTML = sentenceHTML;
+
+        // Agregar event listeners a las palabras
+        const wordElements = container.querySelectorAll('span[data-word]');
+        wordElements.forEach(element => {
+            element.addEventListener('click', () => checkWord(element));
+        });
+    }
+
+    function checkWord(element) {
+        if (!gameActive) return;
+
+        const word = element.dataset.word;
+        const sentence = gameData[currentSentenceIndex];
+        const error = sentence.errors.find(e => word.includes(e.word));
+
+        if (error) {
+            // Palabra correcta seleccionada
+            element.classList.remove('hover:bg-yellow-100');
+            element.classList.add('bg-green-200', 'border-2', 'border-green-400');
+            element.style.pointerEvents = 'none';
+            
+            gameScore += 10;
+            errorsFound++;
+            updateGameStats();
+            
+            showErrorFeedback(error, true);
+            
+            // Verificar si se encontraron todos los errores
+            if (errorsFound >= sentence.errors.length) {
+                setTimeout(() => {
+                    document.getElementById('next-sentence-btn').classList.remove('hidden');
+                }, 1000);
+            }
+        } else {
+            // Palabra incorrecta seleccionada
+            element.classList.add('bg-red-200', 'border-2', 'border-red-400');
+            setTimeout(() => {
+                element.classList.remove('bg-red-200', 'border-2', 'border-red-400');
+            }, 1000);
+            
+            gameScore = Math.max(0, gameScore - 5);
+            updateGameStats();
+            showErrorFeedback(null, false);
+        }
+    }
+
+    function showErrorFeedback(error, isCorrect) {
+        const feedback = document.getElementById('game-feedback');
+        feedback.classList.remove('hidden');
+        
+        if (isCorrect && error) {
+            feedback.innerHTML = `
+                <div class="bg-green-100 border border-green-400 rounded-lg p-3 mb-2">
+                    <p class="text-green-800 font-medium">¡Correcto! 🎉</p>
+                    <p class="text-sm text-green-700">
+                        <strong>Error ${getErrorTypeLabel(error.type)}:</strong> "${error.word}" → "${error.correct}"<br>
+                        <em>${error.explanation}</em>
+                    </p>
+                </div>
+            `;
+        } else {
+            feedback.innerHTML = `
+                <div class="bg-red-100 border border-red-400 rounded-lg p-3 mb-2">
+                    <p class="text-red-800 font-medium">Incorrecto ❌</p>
+                    <p class="text-sm text-red-700">Esta palabra no contiene errores. Intenta con otra.</p>
+                </div>
+            `;
+        }
+        
+        setTimeout(() => {
+            if (!isCorrect) {
+                feedback.classList.add('hidden');
+            }
+        }, 2000);
+    }
+
+    function getErrorTypeLabel(type) {
+        const labels = {
+            'ortografico': 'Ortográfico 🔤',
+            'gramatical': 'Gramatical 📚',
+            'puntuacion': 'de Puntuación ✍️'
+        };
+        return labels[type] || type;
+    }
+
+    function nextSentence() {
+        currentSentenceIndex++;
+        document.getElementById('next-sentence-btn').classList.add('hidden');
+        document.getElementById('game-feedback').classList.add('hidden');
+        showCurrentSentence();
+    }
+
+    function updateGameStats() {
+        document.getElementById('game-score').textContent = gameScore;
+        document.getElementById('errors-found').textContent = errorsFound;
+    }
+
+    function endGame() {
+        gameActive = false;
+        const container = document.getElementById('game-sentences');
+        const totalPossibleScore = gameData.reduce((sum, sentence) => sum + (sentence.errors.length * 10), 0);
+        const percentage = Math.round((gameScore / totalPossibleScore) * 100);
+        
+        let message = '';
+        let colorClass = '';
+        
+        if (percentage >= 90) {
+            message = '¡Excelente trabajo! 🏆';
+            colorClass = 'text-green-600';
+        } else if (percentage >= 70) {
+            message = '¡Buen trabajo! 👍';
+            colorClass = 'text-blue-600';
+        } else if (percentage >= 50) {
+            message = 'Puedes mejorar 📚';
+            colorClass = 'text-yellow-600';
+        } else {
+            message = 'Sigue practicando 💪';
+            colorClass = 'text-red-600';
+        }
+        
+        container.innerHTML = `
+            <div class="bg-white rounded-lg p-6 shadow-lg border-2 border-green-300 text-center">
+                <h4 class="text-2xl font-bold ${colorClass} mb-4">${message}</h4>
+                <p class="text-lg mb-2">Puntuación final: <span class="font-bold text-green-600">${gameScore}</span></p>
+                <p class="text-md text-gray-600">Porcentaje de aciertos: <span class="font-bold">${percentage}%</span></p>
+                <button onclick="resetGame()" class="mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                    🔄 Jugar de Nuevo
+                </button>
+            </div>
+        `;
+    }
+
+    function resetGame() {
+        currentSentenceIndex = 0;
+        gameScore = 0;
+        errorsFound = 0;
+        gameActive = false;
+        
+        updateGameStats();
+        document.getElementById('total-errors').textContent = '0';
+        document.getElementById('game-sentences').innerHTML = '<p class="text-gray-500 text-center py-8">Haz clic en "Iniciar Juego" para comenzar</p>';
+        document.getElementById('start-game-btn').style.display = 'inline-block';
+        document.getElementById('next-sentence-btn').classList.add('hidden');
+        document.getElementById('game-feedback').classList.add('hidden');
+    }
+
+    // Inicializar el juego cuando se carga la página
+    initializeGame();
+    resetGame();
 
 </script>
 
